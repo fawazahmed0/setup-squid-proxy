@@ -1,6 +1,7 @@
 name: Docker squid proxy
+on:
+  workflow_dispatch:
 
-on: [push]
 
 jobs:
 
