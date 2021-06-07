@@ -20,3 +20,11 @@ jobs:
       run: docker logs squid
     - name: test proxy connection
       run: curl -x http://127.0.0.1:3128 --proxy-user ansible:test  -I http://google.com
+
+    - name: ip
+      shell: bash
+      run: curl http://icanhazip.com     
+
+    - name: sleep
+      shell: bash
+      run: sleep 15m
