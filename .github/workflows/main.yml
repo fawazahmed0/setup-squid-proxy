@@ -20,7 +20,7 @@ jobs:
     - name: Check logs
       run: docker logs squid
     - name: test proxy connection
-      run: curl -x http://127.0.0.1:3128 --proxy-user ansible:test  -I http://icanhazip.com     
+      run: curl -x http://127.0.0.1:3128 --proxy-user ansible:test http://icanhazip.com     
 
     - name: ip
       shell: bash
